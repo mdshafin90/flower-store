@@ -9,7 +9,7 @@ import twitterIcon from '../../../public/social-media-icons/twitter.png'
 
 const Footer = () => {
     return (
-        <footer className="footer items-center justify-evenly p-4 bg-teal-200 text-black mt-10">
+        <footer className="footer items-center justify-evenly p-4 bg-slate-400 text-black mt-10">
             <aside className="items-center grid-flow-col">
                 <Link to='/'>
                     <img className='w-[200px]' src={logo} alt="" />

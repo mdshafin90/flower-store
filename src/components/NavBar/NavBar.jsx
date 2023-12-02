@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../../public/logo/fl-logo.png';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
 
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'system');
+    const [open, setOpen] = useState(false);
 
     const element = document.documentElement;
     const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
     // console.log(darkQuery, "darkQuery");
+
+    let navLinks = [
+        { name: "Home", link: "/" },
+        { name: "Flower House", link: "/" },
+        { name: "Blog's", link: "/" },
+        { name: "About Us", link: "/" },
+        { name: "Contact Us", link: "/" },
+    ];
 
     const options = [
         {
@@ -67,15 +77,25 @@ const NavBar = () => {
     return (
         <div>
             <div className='flex justify-center'>
-                <img className='h-[120px]' src={logo} alt="Flower-Store-Logo" />
+                <Link to='/'>
+                    <img className='h-[120px]' src={logo} alt="Flower-Store-Logo" />
+                </Link>
             </div>
-            <div className='flex justify-center items-center space-x-4 h-[90px] bg-indigo-200 my-3'>
-                <p>Home</p>
-                <p>Flowers</p>
-                <p>Book a Flower</p>
-                <p>About Us</p>
-                <p>Contact Us</p>
-                <p className='duration-100 dark:bg-slate-800 bg-gray-100 rounded'>
+            <div className={`flex justify-between px-2 md:justify-center items-center space-x-5 ${open ? "h-[140px]" : "h-[90px]"} ${open ? "duration-500" : "duration-500"} ${theme === 'dark' ? "bg-slate-500" : "bg-indigo-200"}  my-3 overflow-hidden`}>
+
+                <div onClick={() => setOpen(!open)} className='text-3xl text-start cursor-pointer md:hidden duration-300'>
+                    <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
+                </div>
+
+                <div className={`md:flex ${open ? 'flex flex-col md:flex-row space-y-1' : 'hidden'} md:justify-end`}>
+                    <Link to='/'><p className='md:ml-4'>Home</p></Link>
+                    <Link><p className='md:ml-6'>Flowers</p></Link>
+                    <Link><p className='md:ml-6'>Book a Flower</p></Link>
+                    <Link><p className='md:ml-6'>About Us</p></Link>
+                    <Link><p className='md:ml-6'>Contact Us</p></Link>
+                </div>
+
+                <div className='duration-100 dark:bg-slate-800 bg-gray-100 rounded'>
                     {
                         options?.map(opt => (
                             <button
@@ -86,10 +106,9 @@ const NavBar = () => {
                             </button>
                         ))
                     }
-                </p>
+                </div>
             </div>
         </div>
     );
-};
-
+}
 export default NavBar;
