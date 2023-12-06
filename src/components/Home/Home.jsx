@@ -1,5 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
+import Flowers from '../Flowers/Flowers';
+import FlowerCard from '../Flowers/FlowerCard';
 
 
 const Home = () => {

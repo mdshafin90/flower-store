@@ -88,11 +88,11 @@ const NavBar = () => {
                 </div>
 
                 <div className={`md:flex ${open ? 'flex flex-col md:flex-row space-y-1' : 'hidden'} md:justify-end`}>
-                    <Link to='/'><p className='md:ml-4'>Home</p></Link>
-                    <Link><p className='md:ml-6'>Flowers</p></Link>
-                    <Link><p className='md:ml-6'>Book a Flower</p></Link>
-                    <Link><p className='md:ml-6'>About Us</p></Link>
-                    <Link><p className='md:ml-6'>Contact Us</p></Link>
+                    <Link to='/'><p className={`md:ml-4 font-semibold ${theme === 'dark' ? "hover:text-blue-400" : "hover:text-purple-600"} hover:underline`}>Home</p></Link>
+                    <Link to='/flowers'><p className={`md:ml-6 font-semibold ${theme === 'dark' ? "hover:text-blue-400" : "hover:text-purple-600"} hover:underline`}>Flowers</p></Link>
+                    <Link><p className={`md:ml-6 font-semibold ${theme === 'dark' ? "hover:text-blue-400" : "hover:text-purple-600"} hover:underline`}>Book a Flower</p></Link>
+                    <Link><p className={`md:ml-6 font-semibold ${theme === 'dark' ? "hover:text-blue-400" : "hover:text-purple-600"} hover:underline`}>About Us</p></Link>
+                    <Link><p className={`md:ml-6 font-semibold ${theme === 'dark' ? "hover:text-blue-400" : "hover:text-purple-600"} hover:underline`}>Contact Us</p></Link>
                 </div>
 
                 <div className='duration-100 dark:bg-slate-800 bg-gray-100 rounded'>

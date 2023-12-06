@@ -1,0 +1,44 @@
+[
+    {
+        "id": "4a7c56d3-6a28-4f01-8c1b-1f8d613c0e9f",
+        "flowerName": "Rose",
+        "flowerPhoto": "https://i.ibb.co/XX2SJRq/rose-image.png",
+        "flowerRating": 5.0,
+        "flowerStatus": "Available"
+    },
+    {
+        "id": "1f9a5c97-9b6e-43ea-aac6-8ff134864f8b",
+        "flowerName": "Sunflower",
+        "flowerPhoto": "https://i.ibb.co/vj7ftyL/sunflower-image.jpg",
+        "flowerRating": 4.0,
+        "flowerStatus": "Out of Stock"
+    },
+    {
+        "id": "f3203f39-0b6e-49e2-a5a1-63b9f4bf4e82",
+        "flowerName": "Lotus",
+        "flowerPhoto": "https://i.ibb.co/H4vsMrC/lotus-image.jpg",
+        "flowerRating": 3.8,
+        "flowerStatus": "Available"
+    },
+    {
+        "id": "8d6a35c2-58f8-4b69-b46d-79a66e13e92d",
+        "flowerName": "Various Flower",
+        "flowerPhoto": "https://i.ibb.co/PwT2vbS/flower-01.jpg",
+        "flowerRating": 4.2,
+        "flowerStatus": "Available"
+    },
+    {
+        "id": "c7c0a2b7-2c43-4f7b-b8d1-ced5712f7e62",
+        "flowerName": "Daisy",
+        "flowerPhoto": "https://i.ibb.co/7WB1BmF/daisy-image.jpg",
+        "flowerRating": 3.5,
+        "flowerStatus": "Out of Stock"
+    },
+    {
+        "id": "f7d7fb58-ae0e-4b2d-a084-5c9c9916c5c5",
+        "flowerName": "Orchid",
+        "flowerPhoto": "https://i.ibb.co/tBgQWXF/orchid-image.jpg",
+        "flowerRating": 4.8,
+        "flowerStatus": "Available"
+    }
+]
