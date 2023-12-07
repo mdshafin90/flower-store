@@ -43,7 +43,7 @@ const DemoFlower = () => {
                 </div>
             </div>
             <div className='my-10 flex justify-center'>
-                <button className='border-x-4 border-indigo-500 px-7 py-4 text-lg font-bold text-white rounded-tr-3xl rounded-bl-3xl rounded-tl rounded-br bg-gradient-to-r from-slate-600 via-purple-600 to-slate-600'><Link to='flowers'>Show More</Link></button>
+                <button className='border-x-4 hover:shadow-2xl hover:shadow-red-400 border-indigo-500 px-7 py-4 text-lg font-bold text-white rounded-tr-3xl rounded-bl-3xl rounded-tl rounded-br bg-gradient-to-r from-slate-600 via-purple-600 to-slate-600'><Link to='flowers'>Show More</Link></button>
             </div>
         </div>
     );

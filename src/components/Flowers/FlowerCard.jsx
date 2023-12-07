@@ -8,9 +8,10 @@ const FlowerCard = ({ flower }) => {
     const { id, flowerName, flowerPhoto, flowerRating, flowerStatus } = flower;
 
     const handleClick = () => {
-        toast('This is just for demo', {
+        toast.warn('This is just for demo', {
             position: "top-right",
             autoClose: 2000,
+            theme: "dark",
         });
     }
 

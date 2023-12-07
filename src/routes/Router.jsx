@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layouts/Main";
 import Home from "../components/Home/Home";
 import Flowers from "../components/Flowers/Flowers";
+import PageNotFound from "../components/PageNotFound/PageNotFound";
 
 
 const Router = createBrowserRouter([
@@ -19,6 +20,10 @@ const Router = createBrowserRouter([
                 loader: () => fetch('flowers.json')
             }
         ]
+    },
+    {
+        path: '/*',
+        element: <PageNotFound />
     }
 ])
 export default Router;
