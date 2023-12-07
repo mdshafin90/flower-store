@@ -7,6 +7,20 @@ const NavBar = () => {
 
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'system');
     const [open, setOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        setIsScrolled(scrollPosition > 0);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const element = document.documentElement;
     const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -75,12 +89,14 @@ const NavBar = () => {
     });
 
     return (
-        <div>
-            <div className='flex justify-center'>
-                <Link to='/'>
-                    <img className='h-[120px]' src={logo} alt="Flower-Store-Logo" />
-                </Link>
-            </div>
+        <div className={`fixed top-0 left-0 w-full z-50 ${isScrolled ? 'bg-indigo-200' : 'bg-transparent'}`}>
+            {!isScrolled && (
+                <div className='flex justify-center'>
+                    <Link to='/'>
+                        <img className='h-[120px]' src={logo} alt="Flower-Store-Logo" />
+                    </Link>
+                </div>
+            )}
             <div className={`flex justify-between px-2 md:justify-center items-center space-x-5 ${open ? "h-[140px]" : "h-[90px]"} ${open ? "duration-500" : "duration-500"} ${theme === 'dark' ? "bg-slate-500" : "bg-indigo-200"}  my-3 overflow-hidden`}>
 
                 <div onClick={() => setOpen(!open)} className='text-3xl text-start cursor-pointer md:hidden duration-300'>

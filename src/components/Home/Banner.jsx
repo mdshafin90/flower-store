@@ -4,7 +4,7 @@ import Lottie from 'lottie-react';
 
 const Banner = () => {
     return (
-        <div className='my-3 md:my-8'>
+        <div className='my-10'>
             <div className='flex flex-col justify-center lg:flex-row lg:justify-evenly items-center'>
                 <div data-aos="fade-right"
                     data-aos-duration="1000"
