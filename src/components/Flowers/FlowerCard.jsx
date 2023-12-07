@@ -13,7 +13,7 @@ const FlowerCard = ({ flower }) => {
             autoClose: 2000,
             theme: "dark",
         });
-    }
+    };
 
     return (
         <div>

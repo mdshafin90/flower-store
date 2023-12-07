@@ -6,8 +6,20 @@ import fbIcon from '../../../public/social-media-icons/fb.png'
 import ytIcon from '../../../public/social-media-icons/yt-icon.png'
 import linkedInIcon from '../../../public/social-media-icons/linkedIn.png'
 import twitterIcon from '../../../public/social-media-icons/twitter.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
+
+    const handleClick = () => {
+        toast.warn('This is not ready yet', {
+            position: "top-right",
+            autoClose: 2000,
+            theme: "dark",
+        });
+    };
+
+
     return (
         <div className=''>
             <footer className="footer p-10 bg-slate-700 text-white mt-10">
@@ -37,31 +49,35 @@ const Footer = () => {
                     <Link to='/'>
                         <img className='w-[200px]' src={logo} alt="" />
                     </Link>
-                    <p>Copyright © {moment().format("YYYY")} - All right reserved</p>
+                    <div className='flex flex-col'>
+                        <p>Copyright © {moment().format("YYYY")} - All right reserved</p>
+                        <p className='text-sm mt-2'>Site Developed by <span className='text-lg font-semibold'>Slice-Coders BD</span></p>
+                    </div>
                 </aside>
                 <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                     <div className='w-[50px] h-[50px] rounded-full tooltip tooltip-info flex items-center' data-tip="Facebook">
-                        <Link>
+                        <Link to='https://www.facebook.com/slice.coders' target='_blank'>
                             <img src={fbIcon} alt="Facebook" />
                         </Link>
                     </div>
-                    <div className='w-[45px] h-[45px] rounded-full tooltip tooltip-error flex items-center' data-tip="Youtube">
+                    <div className='w-[45px] h-[45px] rounded-full tooltip tooltip-info flex items-center' data-tip="LinkedIn">
+                        <Link to='https://www.linkedin.com/company/slice-coders/' target='_blank'>
+                            <img src={linkedInIcon} alt="LinkedIn" />
+                        </Link>
+                    </div>
+                    <div className='w-[45px] h-[45px] rounded-full tooltip tooltip-error flex items-center' data-tip="Youtube" onClick={handleClick}>
                         <Link>
                             <img src={ytIcon} alt="Youtube" />
                         </Link>
                     </div>
-                    <div className='w-[45px] h-[45px] rounded-full tooltip tooltip-info flex items-center' data-tip="LinkedIn">
-                        <Link>
-                            <img src={linkedInIcon} alt="LinkedIn" />
-                        </Link>
-                    </div>
-                    <div className='w-[45px] h-[45px] tooltip flex items-center' data-tip="Twitter">
+                    <div className='w-[45px] h-[45px] tooltip flex items-center' data-tip="Twitter" onClick={handleClick}>
                         <Link>
                             <img className='rounded-full' src={twitterIcon} alt="Twitter" />
                         </Link>
                     </div>
                 </nav>
             </footer>
+            <ToastContainer />
         </div>
 
     );
