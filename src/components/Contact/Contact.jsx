@@ -12,6 +12,7 @@ import flowerLogo from '../../../public/logo/flower-logo.png'
 import fb from '../../../public/images/fb.png'
 import twitter from '../../../public/images/twitter.png'
 import linkedIn from '../../../public/images/linkedIn.png'
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
 
@@ -19,6 +20,9 @@ const Contact = () => {
 
     return (
         <div className='mt-56 pt-10'>
+            <Helmet>
+                <title>Flower Store | Contact</title>
+            </Helmet>
             <div className='flex justify-center mt-5'>
                 <h1 className='font-bold text-5xl bg-gradient-to-r from-rose-600 via-purple-500 to-rose-400 inline-block text-transparent bg-clip-text'>Contact Us</h1>
             </div>

@@ -17,6 +17,7 @@ import linkedIn from '../../../public/images/linkedIn.png'
 import { Link } from 'react-router-dom';
 import Lottie from 'lottie-react';
 import contactAnimation from '../../../public/animations/contact-us.json'
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
 
@@ -24,6 +25,9 @@ const Home = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Flower Store | Home</title>
+            </Helmet>
             <div className='flex justify-center mt-56 pt-10'>
                 <h1 className='font-bold text-5xl animate-pulse bg-gradient-to-r from-rose-600 via-purple-500 to-rose-400 inline-block text-transparent bg-clip-text'>Flower Store</h1>
             </div>

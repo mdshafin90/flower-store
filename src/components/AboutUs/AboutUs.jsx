@@ -2,10 +2,14 @@ import React from 'react';
 import ukGarden from '../../../public/images/UK-garden.jpg'
 import usaGarden from '../../../public/images/USA-garden.jpeg'
 import uaeGarden from '../../../public/images/UAE-garden.jpg'
+import { Helmet } from 'react-helmet-async';
 
 const AboutUs = () => {
     return (
         <div className='mt-56 pt-10'>
+            <Helmet>
+                <title>Flower Store | About</title>
+            </Helmet>
             <div className='flex justify-center my-5'>
                 <h1 className='font-bold text-5xl bg-gradient-to-r from-rose-600 via-purple-500 to-rose-400 inline-block text-transparent bg-clip-text'>About Us</h1>
             </div>
