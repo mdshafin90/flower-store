@@ -3,6 +3,8 @@ import Banner from './Banner';
 import Flowers from '../Flowers/Flowers';
 import FlowerCard from '../Flowers/FlowerCard';
 import DemoFlower from './DemoFlower';
+import Contact from '../Contact/Contact';
+import AboutUs from '../AboutUs/AboutUs';
 
 
 const Home = () => {
@@ -13,6 +15,8 @@ const Home = () => {
             </div>
             <Banner />
             <DemoFlower />
+            <AboutUs />
+            <Contact />
         </div>
     );
 };

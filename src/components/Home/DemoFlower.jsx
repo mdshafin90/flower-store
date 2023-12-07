@@ -18,27 +18,27 @@ const DemoFlower = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                     {/* Image One */}
                     <div className='shadow-2xl rounded-3xl hover:shadow-blue-400 transition-transform hover:scale-105 duration-500'>
-                        <img className='w-[300px] h-[200px] md:w-[400px] md:h-[300px] rounded-3xl' src={img01} alt="First Image" />
+                        <img className='w-[300px] h-[200px] md:w-[350px] md:h-[250px] lg:w-[400px] lg:h-[300px] rounded-3xl' src={img01} alt="First Image" />
                     </div>
                     {/* Image Two */}
                     <div className='shadow-2xl rounded-3xl hover:shadow-blue-400 transition-transform hover:scale-105 duration-500'>
-                        <img className='w-[300px] h-[200px] md:w-[400px] md:h-[300px] rounded-3xl' src={img02} alt="Second Image" />
+                        <img className='w-[300px] h-[200px] md:w-[350px] md:h-[250px] lg:w-[400px] lg:h-[300px] rounded-3xl' src={img02} alt="Second Image" />
                     </div>
                     {/* Image Three */}
                     <div className='shadow-2xl rounded-3xl hover:shadow-blue-400 transition-transform hover:scale-105 duration-500'>
-                        <img className='w-[300px] h-[200px] md:w-[400px] md:h-[300px] rounded-3xl' src={img03} alt="Third Image" />
+                        <img className='w-[300px] h-[200px] md:w-[350px] md:h-[250px] lg:w-[400px] lg:h-[300px] rounded-3xl' src={img03} alt="Third Image" />
                     </div>
                     {/* Image Four */}
                     <div className='shadow-2xl rounded-3xl hover:shadow-blue-400 transition-transform hover:scale-105 duration-500'>
-                        <img className='w-[300px] h-[200px] md:w-[400px] md:h-[300px] rounded-3xl' src={img04} alt="Third Image" />
+                        <img className='w-[300px] h-[200px] md:w-[350px] md:h-[250px] lg:w-[400px] lg:h-[300px] rounded-3xl' src={img04} alt="Third Image" />
                     </div>
                     {/* Image Five */}
                     <div className='shadow-2xl rounded-3xl hover:shadow-blue-400 transition-transform hover:scale-105 duration-500'>
-                        <img className='w-[300px] h-[200px] md:w-[400px] md:h-[300px] rounded-3xl' src={img05} alt="Third Image" />
+                        <img className='w-[300px] h-[200px] md:w-[350px] md:h-[250px] lg:w-[400px] lg:h-[300px] rounded-3xl' src={img05} alt="Third Image" />
                     </div>
                     {/* Image Six */}
                     <div className='shadow-2xl rounded-3xl hover:shadow-blue-400 transition-transform hover:scale-105 duration-500'>
-                        <img className='w-[300px] h-[200px] md:w-[400px] md:h-[300px] rounded-3xl' src={img06} alt="Third Image" />
+                        <img className='w-[300px] h-[200px] md:w-[350px] md:h-[250px] lg:w-[400px] lg:h-[300px] rounded-3xl' src={img06} alt="Third Image" />
                     </div>
                 </div>
             </div>
