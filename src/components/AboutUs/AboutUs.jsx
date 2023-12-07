@@ -5,7 +5,7 @@ import uaeGarden from '../../../public/images/UAE-garden.jpg'
 
 const AboutUs = () => {
     return (
-        <div className='mt-60'>
+        <div className='mt-56 pt-10'>
             <div className='flex justify-center my-5'>
                 <h1 className='font-bold text-5xl bg-gradient-to-r from-rose-600 via-purple-500 to-rose-400 inline-block text-transparent bg-clip-text'>About Us</h1>
             </div>

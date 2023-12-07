@@ -40,5 +40,47 @@
         "flowerPhoto": "https://i.ibb.co/tBgQWXF/orchid-image.jpg",
         "flowerRating": 4.8,
         "flowerStatus": "Available"
+    },
+    {
+        "id": "8d6a35c2-58f8-4b69-b46d-79a66e13e92v",
+        "flowerName": "Peony",
+        "flowerPhoto": "https://i.ibb.co/wLngTqJ/peony-flower.jpg",
+        "flowerRating": 4.7,
+        "flowerStatus": "Available"
+    },
+    {
+        "id": "c7c0a2b7-2c43-4f7b-b8d1-ced5712f7e63",
+        "flowerName": "Irish",
+        "flowerPhoto": "https://i.ibb.co/P6T2dP1/iris-flower.jpg",
+        "flowerRating": 4.6,
+        "flowerStatus": "Out of Stock"
+    },
+    {
+        "id": "f7d7fb58-ae0e-4b2d-a084-5c9c9916c5c6",
+        "flowerName": "Jasmine",
+        "flowerPhoto": "https://i.ibb.co/9HXMqXv/jsmine-flower.jpg",
+        "flowerRating": 4.8,
+        "flowerStatus": "Available"
+    },
+    {
+        "id": "f7d7fb58-ae0e-4b2d-a084-5c9c9916c5c5",
+        "flowerName": "Orchid",
+        "flowerPhoto": "https://i.ibb.co/tBgQWXF/orchid-image.jpg",
+        "flowerRating": 4.8,
+        "flowerStatus": "Available"
+    },
+    {
+        "id": "1f9a5c97-9b6e-43ea-aac6-8ff134864f8b",
+        "flowerName": "Sunflower",
+        "flowerPhoto": "https://i.ibb.co/vj7ftyL/sunflower-image.jpg",
+        "flowerRating": 4.0,
+        "flowerStatus": "Out of Stock"
+    },
+    {
+        "id": "c7c0a2b7-2c43-4f7b-b8d1-ced5712f7e62",
+        "flowerName": "Daisy",
+        "flowerPhoto": "https://i.ibb.co/7WB1BmF/daisy-image.jpg",
+        "flowerRating": 3.5,
+        "flowerStatus": "Out of Stock"
     }
 ]

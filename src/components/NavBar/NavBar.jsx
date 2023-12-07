@@ -89,7 +89,7 @@ const NavBar = () => {
     });
 
     return (
-        <div className={`fixed top-0 left-0 w-full z-50 ${isScrolled ? 'bg-indigo-200' : 'bg-transparent'}`}>
+        <div className={`fixed top-0 left-0 w-full z-50 dark:bg-slate-800 bg-gray-100 ${isScrolled ? 'bg-indigo-200' : 'bg-transparent'}`}>
             {!isScrolled && (
                 <div className='flex justify-center'>
                     <Link to='/'>
